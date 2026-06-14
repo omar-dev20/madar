@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="madar.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>madar | discounts</title>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/RFPx7RgJ/image.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Unlock the best savings at MaDar. Explore our latest discounts, seasonal promotions, and flash deals on top-rated items. Don't miss out on these limited-time offers."
+    />
+    <meta name="author" content="Omar Soliman" />
+    <meta
+      property="og:title"
+      content="Exclusive Discounts and Promotions | MaDar"
+    />
+    <meta
+      property="og:description"
+      content="Save big with our latest deals and special discounts at MaDar."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MaDar" />
+    <meta
+      property="og:url"
+      content="https://omar-dev20.github.io/madar/discounts.html"
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/RFPx7RgJ/image.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo" onclick="window.location.href = 'index.html'">
+          <img src="icon.png" alt="madar logo" />
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products..."
+          />
+
+        </div>
+        <div id="product-container"></div>
+        <nav class="nav">
+          <ul>
+            <li id="shoping-car" onclick="window.location.href = 'order.html'">
+              <a><i class="fas fa-shopping-cart"></i></a
+              ><span id="shoping-car-count">0</span>
+            </li>
+            <li>
+              <a href="#profile"><i class="fas fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i id="burger-menu" class="fas fa-bars"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header class="sac-header">
+      <div class="main-nav">
+        <ul id="sac-header">
+          <li><a href="index.html" class="nav-item-link active">Home</a></li>
+          <li><a href="product.html" class="nav-item-link">Categories</a></li>
+          <li><a href="discounts.html" class="nav-item-link">Discounts</a></li>
+          <li>
+            <a href="privacy-policy.html" class="nav-item-link"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="return-policy.html" class="nav-item-link">Return Policy</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="portfolio-discount" class="cards-grid"></main>
+    <div class="load-more">
+      <button id="load-more-btn" class="load-more-btn">load more</button>
+    </div>
+    <div>
+      <a id="back-to-top" class="scroll-up"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo footer">
+            <img src="icon.png" alt="Madar Logo" />
+          </div>
+          <div class="footer-links footer">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Categories</a></li>
+              <li><a href="discounts.html">Discounts</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-social footer">
+            <h3>Follow Us</h3>
+
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="all-rights">
+        <p>
+          ©
+          <span id="copyright-year"
+            ><script>
+              document.write(new Date().getFullYear());
+            </script></span
+          >
+          <span class="site-name">MaDar.</span> All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="madar.js" defer type="module"></script>
+    <script src="discount.js" defer type="module"></script>
+    <script src="shoping-carts.js" defer type="module"></script>
+    <script src="product-detial.js" defer type="module"></script>
+    <script src="sale.js" defer type="module"></script>
+  </body>
+</html>

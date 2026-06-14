@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail | madar</title>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/RFPx7RgJ/image.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="madar.css" />
+    <meta
+      name="description"
+      content="Get detailed insights into this product at MaDar. View full specifications, features, and pricing details. Add to cart for a secure checkout process."
+    />
+    <meta name="author" content="Omar Soliman" />
+    <meta property="og:title" content="Product Details | MaDar" />
+    <meta
+      property="og:description"
+      content="View high-quality images and full specifications for this item."
+    />
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="MaDar" />
+    <meta
+      property="og:url"
+      content="https://omar-dev20.github.io/madar/product-detial.html"
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/RFPx7RgJ/image.png"
+    />
+  </head>
+  <body class="not-empty">
+    <header>
+      <div class="container">
+        <div class="logo" onclick="window.location.href = 'index.html'">
+          <img src="icon.png" alt="madar logo" />
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products..."
+          />
+
+        </div>
+        <div id="product-container"></div>
+        <nav class="nav">
+          <ul>
+            <li id="shoping-car" onclick="window.location.href = 'order.html'">
+              <a><i class="fas fa-shopping-cart"></i></a
+              ><span id="shoping-car-count">0</span>
+            </li>
+            <li>
+              <a href="#profile"><i class="fas fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i id="burger-menu" class="fas fa-bars"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header class="sac-header">
+      <div class="main-nav">
+        <ul id="sac-header">
+          <li><a href="index.html" class="nav-item-link active">Home</a></li>
+          <li><a href="product.html" class="nav-item-link">Categories</a></li>
+          <li><a href="discounts.html" class="nav-item-link">Discounts</a></li>
+          <li>
+            <a href="privacy-policy.html" class="nav-item-link"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="return-policy.html" class="nav-item-link">Return Policy</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="product-details-container">
+        <div class="container-wrapper">
+          <section class="product-gallery">
+            <img
+              id="main-product-img"
+              src="https://via.placeholder.com/500"
+              alt="Main Product Image"
+            />
+            <span id="discount-badge" class="discount-percentage">0%</span>
+          </section>
+          <section class="product-info">
+            <h1 id="product-title" class="product-title">
+              Product Name Placeholder
+            </h1>
+
+            <div class="meta-info">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span id="rating-value">4.5</span>
+              </div>
+            </div>
+            <div class="price-container">
+              <span id="discounted-price" class="current-price">0.00</span>
+              <span id="original-price" class="old-price">0.00</span>
+            </div>
+            <p id="product-description" class="product-description">
+              This is a placeholder description for the product. Detailed
+              features, specifications, and materials will be displayed here
+              dynamically.
+            </p>
+
+            <hr class="divider" />
+            <div class="order-num">
+              <i class="fas fa-plus"></i>
+              <span class="numper-order-sale">1</span>
+              <i class="fas fa-minus"></i>
+            </div>
+            <div class="purchase-actions">
+              <button type="button" class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+              <button type="button" class="btn-buy">
+                <i class="fa-solid fa-money-bill"></i> buy now
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <div class="container-wrapper">
+        <h1 class="product-title">Similar Products</h1>
+      </div>
+    </main>
+
+    <main id="portfolio" class="cards-grid"></main>
+
+    <a href="#" class="scroll-up">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo footer">
+            <img src="icon.png" alt="Madar Logo" />
+          </div>
+          <div class="footer-links footer">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Categories</a></li>
+              <li><a href="discounts.html">Discounts</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-social footer">
+            <h3>Follow Us</h3>
+
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="all-rights">
+        <p>
+          ©
+          <span id="copyright-year"
+            ><script>
+              document.write(new Date().getFullYear());
+            </script></span
+          >
+          <span class="site-name">MaDar.</span> All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="product-detial.js" defer type="module"></script>
+  </body>
+</html>

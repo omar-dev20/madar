@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | madar</title>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/RFPx7RgJ/image.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="madar.css" />
+    <meta
+      name="description"
+      content="Browse our diverse catalog of products at MaDar. From electronics to fashion, we bring you the best selection of items categorized for your convenience."
+    />
+    <meta name="author" content="Omar Soliman" />
+    <meta property="og:title" content="Products Collection | MaDar" />
+    <meta
+      property="og:description"
+      content="Discover everything you need in our categorized product list."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MaDar" />
+    <meta
+      property="og:url"
+      content="https://omar-dev20.github.io/madar/product.html"
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/RFPx7RgJ/image.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo" onclick="window.location.href = 'index.html'">
+          <img src="icon.png" alt="madar logo" />
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products..."
+          />
+
+        </div>
+        <div id="product-container"></div>
+        <nav class="nav">
+          <ul>
+            <li id="shoping-car" onclick="window.location.href = 'order.html'">
+              <a><i class="fas fa-shopping-cart"></i></a
+              ><span id="shoping-car-count">0</span>
+            </li>
+            <li>
+              <a href="#profile"><i class="fas fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i id="burger-menu" class="fas fa-bars"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header class="sac-header">
+      <div class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li><a href="product.html" class="nav-item-link">Categories</a></li>
+          <li><a href="discounts.html" class="nav-item-link">Discounts</a></li>
+          <li>
+            <a href="privacy-policy.html" class="nav-item-link"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="return-policy.html" class="nav-item-link">Return Policy</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section>
+        <nav class="category-filter">
+          <button class="cat-btn" data-cat="beauty">beauty</button>
+          <button class="cat-btn" data-cat="fragrances">fragrances</button>
+          <button class="cat-btn" data-cat="furniture">furniture</button>
+          <button class="cat-btn" data-cat="groceries">groceries</button>
+          <button class="cat-btn" data-cat="view all">view all</button>
+        </nav>
+
+          <div id="portfolio" class="cards-grid"></div>
+
+        <div class="load-more">
+          <button id="load-more-btn" class="load-more-btn">load more</button>
+        </div>
+      </section>
+      <div>
+        <a id="back-to-top" class="scroll-up"
+          ><i class="fa-solid fa-arrow-up"></i
+        ></a>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo footer">
+            <img src="icon.png" alt="Madar Logo" />
+          </div>
+          <div class="footer-links footer">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Categories</a></li>
+              <li><a href="discounts.html">Discounts</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-social footer">
+            <h3>Follow Us</h3>
+
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="all-rights">
+        <p>
+          ©
+          <span id="copyright-year"
+            ><script>
+              document.write(new Date().getFullYear());
+            </script></span
+          >
+          <span class="site-name">MaDar.</span> All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="madar.js" defer type="module"></script>
+    <script src="make-card.js" defer type="module"></script>
+    <script src="shoping-carts.js" defer type="module"></script>
+  </body>
+</html>
