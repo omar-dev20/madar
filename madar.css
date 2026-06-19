@@ -1106,6 +1106,9 @@ button[type='button'] {
   font-size: 16px;
   color: #e2e2e2;
 }
+.summary-row span {
+    color: #fff;
+}
 
 .summary-divider {
   border: 0;
