@@ -153,7 +153,6 @@ header {
   -ms-flex-align: center;
   align-items: center;
   gap: 27px;
-  margin: 10px 0;
   list-style: none;
 }
 
@@ -269,7 +268,9 @@ header {
   background-color: rgba(120, 120, 120, 0.195);
   margin-bottom: 50px;
 }
-
+.nav li{
+  margin:0 5px;
+}
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
