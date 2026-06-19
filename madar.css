@@ -153,6 +153,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   gap: 27px;
+  margin: 10px 0;
   list-style: none;
 }
 
