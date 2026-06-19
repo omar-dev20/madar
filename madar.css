@@ -681,6 +681,7 @@ button[type='button'] {
   color: #ffffff;
   border: none;
   border-radius: 12px;
+  margin-bottom: 5px;
   padding: 12px 20px;
   font-weight: 600;
   font-size: 0.95rem;
