@@ -36,14 +36,6 @@ class ProductDetail {
             if (discountBadge) discountBadge.style.display = 'none';
         }
         
-        let productOldPrice = document.getElementById('original-price');
-        if (this.oldPrice && this.oldPrice > 0) {
-            if (productOldPrice) {
-                productOldPrice.textContent = `${this.oldPrice} Eg`;
-            }
-        } else {
-            if (productOldPrice) productOldPrice.style.display = 'none';
-        }
 
         let productPrice = document.getElementById('discounted-price');
         if (productPrice) productPrice.textContent = `${this.price} Eg`;
@@ -101,12 +93,8 @@ let detailInstance = new ProductDetail(
         if (orderNumEl) orderNumEl.textContent = currentProductOrder ? currentProductOrder.num : "1";
 
         let productPrice = document.getElementById('discounted-price');
-        let productOldPrice = document.getElementById('original-price');
         let currentQty = orderNumEl ? (Number(orderNumEl.textContent) || 1) : 1;
-
         if (productPrice) productPrice.textContent = `${basePrice * currentQty} Eg`;
-        if (productOldPrice && baseOldPrice > 0) productOldPrice.textContent = `${baseOldPrice * currentQty} Eg`;
-
         function updateProductTotals(newQty) {
             let storageNums = JSON.parse(localStorage.getItem('num-of-product')) || [];
             let numIndex = storageNums.findIndex(item => item.title === get.title);
@@ -140,7 +128,6 @@ let detailInstance = new ProductDetail(
                     let newNum = num - 1;
                     orderNumEl.textContent = newNum;
                     if (productPrice) productPrice.textContent = `${basePrice * newNum} Eg`;
-                    if (productOldPrice && baseOldPrice > 0) productOldPrice.textContent = `${baseOldPrice * newNum} Eg`;
                     updateProductTotals(newNum);
                 }
             });
@@ -155,7 +142,6 @@ let detailInstance = new ProductDetail(
                 let newNum = num + 1;
                 orderNumEl.textContent = newNum;
                 if (productPrice) productPrice.textContent = `${basePrice * newNum} Eg`;
-                if (productOldPrice && baseOldPrice > 0) productOldPrice.textContent = `${baseOldPrice * newNum} Eg`;
                 updateProductTotals(newNum);
             });
         }
