@@ -125,6 +125,12 @@ async function loadCards(categoryName) {
     try {
         let response = await fetch(url);
         let data = await response.json();
+         currentIndex = 0; 
+       const portfolio = document.getElementById('portfolio');
+        if (portfolio) {
+            portfolio.innerHTML = ""; 
+        }
+
         currentProductsArray = data.products.filter(p => p.id <= 99);
         
         renderChunk();
