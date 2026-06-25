@@ -156,6 +156,6 @@ let btn = document.querySelector('.btn-primary');
 if (btn) {
     btn.addEventListener('click', function() {
        localStorage.clear();
-        window.location.href = 'madar.html';
+        window.location.href = 'index.html';
     });
 }
