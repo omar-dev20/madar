@@ -442,13 +442,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(globalCartItems.length === 0){
             let summaryContainer = document.querySelector('.order-summary-container');
             if(summaryContainer) summaryContainer.style.display = 'none';
-            let createNote = document.createElement('p');
-            let iconNote = document.createElement('i');
-            iconNote.classList.add('fa-solid', 'fa-circle-info');
-            createNote.textContent = 'Your cart is empty  ';
-            createNote.appendChild(iconNote);
-            createNote.classList.add('empty-cart');
-            document.querySelector(.shoping-cart).appendChild(createNote);
         }
     }
 });
