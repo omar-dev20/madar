@@ -448,7 +448,7 @@ document.addEventListener('DOMContentLoaded', function() {
             createNote.textContent = 'Your cart is empty  ';
             createNote.appendChild(iconNote);
             createNote.classList.add('empty-cart');
-            document.body.appendChild(createNote);
+            document.querySelector(.shoping-cart).appendChild(createNote);
         }
     }
 });
