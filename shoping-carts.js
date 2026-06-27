@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (shopingcount) {
         shopingcount.textContent = globalCartItems.length;
     }
-    if (window.location.pathname.includes('order.html.html')) {
+    if (window.location.pathname.includes('order.html')) {
         if(globalCartItems.length === 0){
             let summaryContainer = document.querySelector('.order-summary-container');
             if(summaryContainer) summaryContainer.style.display = 'none';
