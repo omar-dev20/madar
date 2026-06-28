@@ -219,37 +219,36 @@ async function loadSimilarProducts(category, currentProductId) {
 
         let allCards = JSON.parse(localStorage.getItem('all-cards')) || [];
 
-        similarProductsArray.forEach(product => {
-            let savedCard = allCards.find(card => String(card.id) === String(product.id));
-            let discountValue = 0;
-            if (savedCard && savedCard.descount) {
-                discountValue = parseFloat(String(savedCard.descount).replace(/[^0-9.]/g, ''));
-            } else if (product.discountPercentage) {
-                discountValue = Math.round(product.discountPercentage);
-            }
-            if (discountValue > 0) {
-                new DiscountCard(
-                    product.id,
-                    product.title,
-                    savedCard?.price || Math.round(product.price),
-                    discountValue,
-                    product.thumbnail, 
-                    product.description,
-                    product.rating,
-                    product.category
-                ).randerCard(portfolio);
-            } else {
-                new makeCard(
-                    product.id,
-                    product.title,
-                    product.price,
-                    product.thumbnail,
-                    product.description,
-                    product.rating,
-                    product.category
-                ).randerCard(portfolio);
-            }
-        });
+   similarProductsArray.forEach(product => {
+    let savedCard = allCards.find(card => String(card.id) === String(product.id));
+    let discountValue = 0;
+    if (savedCard && savedCard.descount) {
+        discountValue = parseFloat(String(savedCard.descount).replace(/[^0-9.]/g, ''));
+    }
+
+    if (discountValue > 0) {
+        new DiscountCard(
+            product.id,
+            product.title,
+            savedCard?.price || Math.round(product.price),
+            discountValue,
+            product.thumbnail, 
+            product.description,
+            product.rating,
+            product.category
+        ).randerCard(portfolio);
+    } else {
+        new makeCard(
+            product.id,
+            product.title,
+            product.price,
+            product.thumbnail,
+            product.description,
+            product.rating,
+            product.category
+        ).randerCard(portfolio);
+    }
+});
 
         if (similarProductsArray.length > 5) {
             similarProductsArray.splice(5);
