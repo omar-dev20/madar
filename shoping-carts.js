@@ -448,7 +448,10 @@ document.addEventListener('DOMContentLoaded', function() {
             createNote.textContent = 'Your cart is empty  ';
             createNote.appendChild(iconNote);
             createNote.classList.add('empty-cart');
-          document.querySelector('.shoping-cart').appendChild(createNote);
+        let shop =  document.querySelector('.shoping-cart');
+          shop.style.margin ='auto'
+        shop.document.querySelector('.shoping-cart').appendChild(createNote);
+        
         }
     }
 });
