@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', function() {
             createNote.appendChild(iconNote);
             createNote.classList.add('empty-cart');
         let shop =  document.querySelector('.shoping-cart');
-          shop.style.margin ='auto'
+          shop.style.style.cssText = `display:block;margin:auto`;
         shop.document.querySelector('.shoping-cart').appendChild(createNote);
         
         }
